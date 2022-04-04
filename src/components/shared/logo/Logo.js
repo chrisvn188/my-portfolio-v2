@@ -3,9 +3,9 @@ import FeaturedText from '../featuredText/FeaturedText';
 
 const Logo = () => {
   return (
-    <div className='text-3xl'>
+    <a className='text-3xl' href='/#home'>
       CAB<FeaturedText>.</FeaturedText>
-    </div>
+    </a>
   );
 };
 

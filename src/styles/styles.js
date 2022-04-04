@@ -1,5 +1,7 @@
 export const styles = {
   wrapper: 'bg-brand text-slate-200',
+  header:
+    'flex justify-between py-8 px-6 items-center bg-brand lg:bg-brand-dark lg:fixed lg:w-[18rem] lg:h-screen lg:flex-col lg:z-10',
   main: 'lg:ml-[18rem]',
   headingTwo: 'text-2xl md:text-3xl lg:text-4xl uppercase tracking-widest',
   headingThree:

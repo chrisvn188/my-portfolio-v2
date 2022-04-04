@@ -50,8 +50,9 @@ const Contact = () => {
 
   return (
     <section id='contact' className={styles.section('bg-brand-violet')}>
-      <div>
+      <div className='space-y-20'>
         <h2 className={styles.headingTwo}>Get in touch</h2>
+
         <form
           className='max-w-[40rem] gap-6 mt-20 space-y-6 mx-auto'
           onSubmit={handleSubmit}>

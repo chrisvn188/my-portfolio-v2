@@ -32,7 +32,7 @@ const Home = () => {
           </a>
           <a
             className='bg-brand-red px-4 py-2 md:px-6 md:py-3 rounded-full hover:-translate-y-1 transition-all inline-block text-md sm:text-lg lg:text-xl'
-            href='#work'>
+            href='#projects'>
             My projects
           </a>
         </div>
