@@ -5,9 +5,7 @@ const ProjectList = ({ projectList }) => {
   return (
     <ul className='flex gap-10 mt-20 flex-wrap justify-center'>
       {projectList.map(project => (
-        <li
-          key={project.title}
-          className='space-y-6 bg-brand-dark p-6 rounded-xl max-w-[32rem] lg:max-w-md'>
+        <li key={project.title}>
           <ProjectCard project={project} />
         </li>
       ))}

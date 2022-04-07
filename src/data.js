@@ -80,7 +80,7 @@ export const activities = [
 
 export const projectList = [
   {
-    title: 'My portfolio website 1',
+    title: 'My portfolio website',
     imgSrc: PorfolioImg,
     description:
       'My portfolio website is the first website I build using React and TailwindCss. Although, there are still some bugs and missing features, I had a ton of fun and learned a lot.',

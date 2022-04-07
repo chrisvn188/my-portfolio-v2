@@ -42,7 +42,9 @@ export const Form = ({
         rows='8'
         errorMessage={formErrors.message}
       />
-      <Button type='submit'>Send</Button>
+      <Button type='submit' color='yellow'>
+        Send
+      </Button>
     </form>
   );
 };

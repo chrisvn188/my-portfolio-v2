@@ -3,10 +3,12 @@ import { FaGithub, FaLink } from 'react-icons/fa';
 
 const ProjectCard = ({ project }) => {
   return (
-    <>
-      <div>
-        <img className='rounded-lg' src={project.imgSrc} alt={project.title} />
-      </div>
+    <article className='space-y-6 bg-brand-dark p-6 rounded-xl max-w-[32rem] lg:max-w-md'>
+      <img
+        className='rounded-lg max-w-full'
+        src={project.imgSrc}
+        alt={project.title}
+      />
       <h3>{project.title}</h3>
       <p>{project.description}</p>
       <div className='flex gap-3'>
@@ -25,7 +27,7 @@ const ProjectCard = ({ project }) => {
           <FaLink />
         </a>
       </div>
-    </>
+    </article>
   );
 };
 

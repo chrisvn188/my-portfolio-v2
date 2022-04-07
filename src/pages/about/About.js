@@ -30,7 +30,7 @@ const About = () => {
             className='max-w-[14rem] col-span-1 row-span-2 self-center justify-self-center hidden md:block'
           />
           <div className='col-span-2'>
-            <h3>What I do when I don't code</h3>
+            <h3 className='mt-20 md:mt-0'>What I do when I don't code</h3>
             <ul className='flex flex-wrap gap-x-6 gap-y-10 gap-6 mt-10 justify-items-center'>
               {activities.map(activity => (
                 <li className='text-center' key={activity.name}>
