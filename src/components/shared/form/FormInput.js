@@ -6,7 +6,7 @@ export const FormInput = ({ errorMessage, ...rest }) => {
       <label className='block'>
         <span className='sr-only'>{rest.name}</span>
         <input
-          className='p-3 rounded-full lg:p-4 text-xl block w-full'
+          className='p-3 rounded-full lg:p-4 text-base sm:text-lg md:text-xl block w-full'
           {...rest}
         />
       </label>

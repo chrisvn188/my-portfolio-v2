@@ -7,10 +7,13 @@ const Home = () => {
     <section
       id='home'
       className={`${styles.section()} lg:grid place-items-center`}>
-      <div className='lg:grid lg:auto-cols-auto lg:gap-14 lg:place-items-end sm:max-w-lg mx-auto md:max-w-xl lg:max-w-[50rem] max-w-md '>
+      <div className='lg:grid lg:auto-cols-auto lg:gap-12 lg:place-items-end sm:max-w-lg mx-auto md:max-w-xl lg:max-w-[50rem] max-w-md '>
         <div className='lg:col-span-1 lg:col-start-2 row-start-1 lg:text-left text-center space-y-3 lg:space-y-4'>
           <p>Hi there, I'm</p>
-          <h1>&lt; Chi Anh Bui &#47;&gt;</h1>
+          <h1>
+            <span className='text-brand-red'>&lt;</span> Chi Anh Bui{' '}
+            <span className='text-brand-red'>&#47;&gt;</span>
+          </h1>
           <p>
             A front end web developer based in Toronto, Canada who loves making
             simple things with great visual effects.
