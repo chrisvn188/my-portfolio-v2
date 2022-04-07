@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Button from '../../components/shared/button/Button';
 import emailjs from '@emailjs/browser';
+import Form from '../../components/shared/form/Form';
 import { validate } from '../../utils/validateForm';
-import FormInput from '../../components/shared/form/formInput/FormInput';
-import TextArea from '../../components/shared/form/textArea/TextArea';
 import { styles } from '../../styles/styles';
 
 const initialValues = { name: '', email: '', subject: '', message: '' };
@@ -41,7 +39,7 @@ const Contact = () => {
     setIsSubmit(true);
   }
 
-  function handleInputChange(e) {
+  function handleChange(e) {
     setFormValues(prevFormValues => ({
       ...prevFormValues,
       [e.target.name]: e.target.value,
@@ -52,42 +50,12 @@ const Contact = () => {
     <section id='contact' className={styles.section('bg-brand-violet')}>
       <div className='space-y-20'>
         <h2 className={styles.headingTwo}>Get in touch</h2>
-
-        <form
-          className='max-w-[40rem] gap-6 mt-20 space-y-6 mx-auto'
-          onSubmit={handleSubmit}>
-          <FormInput
-            name='name'
-            onChange={handleInputChange}
-            placeholder='Your name'
-            value={formValues.name}
-            errorMessage={formErrors.name}
-          />
-          <FormInput
-            name='email'
-            onChange={handleInputChange}
-            placeholder='Email Address'
-            value={formValues.email}
-            errorMessage={formErrors.email}
-          />
-          <FormInput
-            name='subject'
-            onChange={handleInputChange}
-            placeholder='Subject'
-            value={formValues.subject}
-            errorMessage={formErrors.subject}
-          />
-          <TextArea
-            name='message'
-            onChange={handleInputChange}
-            placeholder='Message'
-            value={formValues.message}
-            cols='30'
-            rows='8'
-            errorMessage={formErrors.message}
-          />
-          <Button type='submit'>Send</Button>
-        </form>
+        <Form
+          handleChange={handleChange}
+          handleSubmit={handleSubmit}
+          formErrors={formErrors}
+          formValues={formValues}
+        />
       </div>
     </section>
   );

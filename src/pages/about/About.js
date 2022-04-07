@@ -41,7 +41,6 @@ const About = () => {
     <section id='about' className={styles.section('bg-brand-violet')}>
       <div className='space-y-20'>
         <h2 className={styles.headingTwo}>About me</h2>
-
         <div className='md:grid md:grid-cols-3 md:gap-y-20 md:gap-x-10'>
           <p className={`${styles.paragraph} col-span-2`}>
             Hi, Nice to meet you! I'm Chi or you can call me Chris. I graduated
@@ -51,11 +50,13 @@ const About = () => {
             Currently, I'm looking for any oppotunities to work as a
             professional web developer.
           </p>
+
           <img
             src={bigImg}
             alt="I'm playing sport"
             className='max-w-[14rem] col-span-1 row-span-2 self-center justify-self-center hidden md:block'
           />
+
           <div className='col-span-2'>
             <h3 className='text-2xl lg:text-3xl text-brand-yellow mt-20 md:mt-0'>
               What I do when I don't code
