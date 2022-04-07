@@ -1,9 +1,13 @@
-import React from 'react';
-import FormInput from './formInput/FormInput';
-import TextArea from './textArea/TextArea';
-import Button from '../button/Button';
+import { FormInput } from './FormInput';
+import { TextArea } from './TextArea';
+import { Button } from '../button/Button';
 
-const Form = ({ handleChange, handleSubmit, formValues, formErrors }) => {
+export const Form = ({
+  handleChange,
+  handleSubmit,
+  formValues,
+  formErrors,
+}) => {
   return (
     <form
       className='max-w-[40rem] gap-6 mt-20 space-y-6 mx-auto'
@@ -42,5 +46,3 @@ const Form = ({ handleChange, handleSubmit, formValues, formErrors }) => {
     </form>
   );
 };
-
-export default Form;

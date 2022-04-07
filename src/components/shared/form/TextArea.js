@@ -1,6 +1,6 @@
-import ErrorText from '../formErrorText/FormErrorText';
+import { ErrorText } from './FormErrorText';
 
-const TextArea = ({
+export const TextArea = ({
   name,
   placeholder,
   value,
@@ -27,5 +27,3 @@ const TextArea = ({
     </div>
   );
 };
-
-export default TextArea;

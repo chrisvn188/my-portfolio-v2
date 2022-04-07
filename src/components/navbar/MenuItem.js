@@ -1,16 +1,4 @@
-import React from 'react';
-
-const MenuList = ({ menuList }) => {
-  return (
-    <ul className='space-y-6'>
-      {menuList.map(item => (
-        <MenuItem key={item.tab} item={item} />
-      ))}
-    </ul>
-  );
-};
-
-const MenuItem = ({ item }) => {
+export const MenuItem = ({ item }) => {
   return (
     <li>
       <a
@@ -22,5 +10,3 @@ const MenuItem = ({ item }) => {
     </li>
   );
 };
-
-export default MenuList;

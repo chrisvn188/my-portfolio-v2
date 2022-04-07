@@ -1,17 +1,13 @@
-import React from 'react';
-import Logo from '../shared/logo/Logo';
-import Navbar from '../navbar/Navbar';
-import { styles } from '../../styles/styles';
-import { SocialList } from './socialList/SocialList';
-import { MenuButton } from './menuButton/MenuButton';
+import { Logo } from '../shared/logo/Logo';
+import { Navbar } from '../navbar/Navbar';
+import { SocialList } from './SocialList';
 
-const Header = ({ onMenuBtnClick, menuList, socialLinks, handleShowNav }) => {
+const Header = ({ menuList, socialLinks }) => {
   return (
-    <header className={styles.header}>
+    <header className='flex justify-between py-8 px-6 items-center bg-brand lg:bg-brand-dark lg:fixed lg:w-[18rem] lg:h-screen lg:flex-col lg:z-10'>
       <Logo />
       <Navbar menuList={menuList} />
       <SocialList socialLinks={socialLinks} />
-      <MenuButton onClick={onMenuBtnClick} handleShowNav={handleShowNav} />
     </header>
   );
 };

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import Form from '../../components/shared/form/Form';
+import { useEffect, useState } from 'react';
+import { Form } from '../../components/shared/form/Form';
 import { validate } from '../../utils/validateForm';
 import { styles } from '../../styles/styles';
+import emailjs from '@emailjs/browser';
 
 const initialValues = { name: '', email: '', subject: '', message: '' };
 
@@ -49,7 +49,7 @@ const Contact = () => {
   return (
     <section id='contact' className={styles.section('bg-brand-violet')}>
       <div className='space-y-20'>
-        <h2 className={styles.headingTwo}>Get in touch</h2>
+        <h2>Get in touch</h2>
         <Form
           handleChange={handleChange}
           handleSubmit={handleSubmit}

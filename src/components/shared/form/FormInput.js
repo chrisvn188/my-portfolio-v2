@@ -1,6 +1,12 @@
-import ErrorText from '../formErrorText/FormErrorText';
+import { ErrorText } from './FormErrorText';
 
-const FormInput = ({ name, onChange, placeholder, value, errorMessage }) => {
+export const FormInput = ({
+  name,
+  onChange,
+  placeholder,
+  value,
+  errorMessage,
+}) => {
   return (
     <div>
       <label className='block'>
@@ -18,5 +24,3 @@ const FormInput = ({ name, onChange, placeholder, value, errorMessage }) => {
     </div>
   );
 };
-
-export default FormInput;
