@@ -87,4 +87,20 @@ export const projectList = [
     github: 'https://github.com/chrisvn188/my-portfolio-v2',
     live: 'https://chrisbui-personal.netlify.app/',
   },
+  {
+    title: 'Placeholder project',
+    imgSrc: PorfolioImg,
+    description:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ratione ipsum temporibus veritatis dolores ab quod voluptas vitae molestiae earum!',
+    github: 'https://github.com/chrisvn188/my-portfolio-v2',
+    live: 'https://chrisbui-personal.netlify.app/',
+  },
+  {
+    title: 'Placeholder project',
+    imgSrc: PorfolioImg,
+    description:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ratione ipsum temporibus veritatis dolores ab quod voluptas vitae molestiae earum!',
+    github: 'https://github.com/chrisvn188/my-portfolio-v2',
+    live: 'https://chrisbui-personal.netlify.app/',
+  },
 ];
