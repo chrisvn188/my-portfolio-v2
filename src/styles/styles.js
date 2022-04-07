@@ -2,7 +2,7 @@ const COLORS = ['violet', 'red', 'yellow'];
 
 export const styles = {
   section(backgroundColor = '') {
-    return `py-20 lg:min-h-screen px-6 sm:px-8 md:px-10 lg:px-12 ${backgroundColor}`;
+    return `py-20 lg:min-h-screen px-4 sm:px-8 md:px-10 lg:px-12 ${backgroundColor}`;
   },
 
   link(color) {
