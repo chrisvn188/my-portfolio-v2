@@ -1,6 +1,6 @@
 import React from 'react';
 import { styles } from '../../styles/styles';
-import { projectList } from '../../data';
+import { projectList } from '../../data/data';
 import ProjectList from './ProjectList';
 
 const Projects = () => {

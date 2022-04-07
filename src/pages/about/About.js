@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { styles } from '../../styles/styles';
-import { activities } from '../../data';
+import { activities } from '../../data/data';
 import PlayingSportImg from '../../assets/images/playing-sport.svg';
 
 const About = () => {

@@ -3,7 +3,7 @@ import About from './pages/about/About';
 import Projects from './pages/projects/Projects';
 import Contact from './pages/contact/Contact';
 import Header from './components/header/Header';
-import { menuList, socialLinks } from './data';
+import { menuList, socialLinks } from './data/data';
 
 const App = () => {
   function handleShowNav(e) {
