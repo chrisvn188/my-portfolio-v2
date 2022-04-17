@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { styles } from '../../styles/styles'
 import { activities } from '../../data/data'
 import PlayingSportImg from '../../assets/images/playing-sport.svg'
@@ -6,11 +6,26 @@ import Activities from '../Activities/Activities'
 
 const About = () => {
   const [bigAboutImage, setBigAboutImage] = useState(PlayingSportImg)
+  const aboutImgRef = useRef(null)
 
   function handleClickOnActivityCard(e) {
     const imgSrc = e.currentTarget.querySelector('img').src
     setBigAboutImage(imgSrc)
   }
+
+  const handleMouseMove = e => {
+    const movingValue = aboutImgRef.current.dataset.value
+    const x = (e.clientX * movingValue) / 250
+    const y = (e.clientY * movingValue) / 250
+    aboutImgRef.current.style.transform = `translateX(${x}px) translateY(${y}px)`
+  }
+
+  useEffect(() => {
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove)
+    }
+  }, [])
 
   return (
     <section id='about' className={styles.section('bg-brand')}>
@@ -26,6 +41,8 @@ const About = () => {
             professional web developer.
           </p>
           <img
+            ref={aboutImgRef}
+            data-value='-5'
             src={bigAboutImage}
             alt="I'm playing sport"
             className='max-w-[14rem] col-span-1 row-span-2 self-center justify-self-center hidden md:block'
