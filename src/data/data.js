@@ -9,6 +9,7 @@ import SingingImg from '../assets/images/singing.png'
 import PorfolioImg from '../assets/images/project-portfolio.png'
 import MemoryEggsImg from '../assets/images/memory-eggs.png'
 import CountriesImg from '../assets/images/countries-api.png'
+import MusicImg from '../assets/images/music-player.png'
 
 export const menuList = [
   {
@@ -84,10 +85,10 @@ export const projectList = [
     live: 'https://chrisbui-personal.netlify.app/',
   },
   {
-    title: 'Memory Eggs',
+    title: 'Uncle Minigames',
     imgSrc: MemoryEggsImg,
     description:
-      "Memory Eggs is another React project that I build for my nephews. It is a good game for brain, help them to remember things better. I'm so happy that they like it and have lots of fun playing it.",
+      "Uncle Minigames is another React project that I build for my nephews. It is a collection of minigames that are good for brain, help them to remember things better. I'm so happy that they liked it and had lots of fun playing it.",
     github: 'https://github.com/chrisvn188/memory-eggs',
     live: 'https://memory-eggs-mini-game.netlify.app/',
   },
@@ -98,5 +99,13 @@ export const projectList = [
       'Countries app is a great project challenged by Front End Mentor. Working on this project helped me strenthen my skills to handle with api.',
     github: 'https://github.com/chrisvn188/country-api-project',
     live: 'https://fa-country-api.netlify.app/',
+  },
+  {
+    title: 'Music Player',
+    imgSrc: MusicImg,
+    description:
+      'As I love listening to music in my free time, I decided to make a simple music app that includes a list of my favourite Vietnamese songs. It was a fun project to practice my Javascript skill.',
+    github: 'https://github.com/chrisvn188/music-player',
+    live: 'https://chrisvn188.github.io/music-player/',
   },
 ]
