@@ -1,4 +1,4 @@
-export const SocialItem = ({ item }) => {
+const SocialItem = ({ item }) => {
   return (
     <li>
       <a
@@ -9,5 +9,15 @@ export const SocialItem = ({ item }) => {
         <item.icon />
       </a>
     </li>
-  );
-};
+  )
+}
+
+export const SocialList = ({ socialLinks }) => {
+  return (
+    <ul className='justify-center gap-4 hidden lg:flex'>
+      {socialLinks.map(item => (
+        <SocialItem item={item} key={item.name} />
+      ))}
+    </ul>
+  )
+}

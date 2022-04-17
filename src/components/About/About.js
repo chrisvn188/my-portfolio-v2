@@ -1,18 +1,19 @@
-import { useState } from 'react';
-import { styles } from '../../styles/styles';
-import { activities } from '../../data/data';
-import PlayingSportImg from '../../assets/images/playing-sport.svg';
+import { useState } from 'react'
+import { styles } from '../../styles/styles'
+import { activities } from '../../data/data'
+import PlayingSportImg from '../../assets/images/playing-sport.svg'
+import Activities from '../Activities/Activities'
 
 const About = () => {
-  const [bigAboutImage, setBigAboutImage] = useState(PlayingSportImg);
+  const [bigAboutImage, setBigAboutImage] = useState(PlayingSportImg)
 
   function handleClickOnActivityCard(e) {
-    const imgSrc = e.currentTarget.querySelector('img').src;
-    setBigAboutImage(imgSrc);
+    const imgSrc = e.currentTarget.querySelector('img').src
+    setBigAboutImage(imgSrc)
   }
 
   return (
-    <section id='about' className={styles.section('bg-brand-violet')}>
+    <section id='about' className={styles.section('bg-brand')}>
       <div className='space-y-20'>
         <h2>About me</h2>
         <div className='md:grid md:grid-cols-3 md:gap-y-20 md:gap-x-10'>
@@ -31,21 +32,13 @@ const About = () => {
           />
           <div className='col-span-2'>
             <h3 className='mt-20 md:mt-0'>What I do when I don't code</h3>
-            <ul className='flex flex-wrap gap-x-6 gap-y-10 gap-6 mt-10 justify-items-center'>
+            <ul className='flex flex-wrap gap-x-6 gap-y-12 gap-6 mt-10 justify-center md:justify-start'>
               {activities.map(activity => (
                 <li className='text-center' key={activity.name}>
-                  <div
-                    className='w-[8rem] h-[8rem] border-dotted border-brand-yellow border-2 p-6 rounded-3xl transition-all hover:-translate-y-2  cursor-pointer'
-                    onClick={handleClickOnActivityCard}>
-                    <img
-                      className='max-h-full'
-                      src={activity.imgSrc}
-                      alt={activity.altText}
-                    />
-                  </div>
-                  <h4 className='text-md sm:text-lg mt-2 capitalize'>
-                    {activity.name}
-                  </h4>
+                  <Activities
+                    handleClickOnActivityCard={handleClickOnActivityCard}
+                    activity={activity}
+                  />
                 </li>
               ))}
             </ul>
@@ -53,7 +46,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

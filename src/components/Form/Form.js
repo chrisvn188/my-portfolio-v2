@@ -1,6 +1,6 @@
-import { FormInput } from './FormInput';
-import { TextArea } from './TextArea';
-import { Button } from '../button/Button';
+import { FormInput } from './FormInput'
+import { TextArea } from './TextArea'
+import { Button } from '../Button/Button'
 
 export const Form = ({
   handleChange,
@@ -9,9 +9,7 @@ export const Form = ({
   formErrors,
 }) => {
   return (
-    <form
-      className='max-w-[40rem] gap-6 mt-20 space-y-6 mx-auto'
-      onSubmit={handleSubmit}>
+    <form className='w-full gap-6 space-y-6' onSubmit={handleSubmit}>
       <FormInput
         name='name'
         onChange={handleChange}
@@ -42,9 +40,9 @@ export const Form = ({
         rows='8'
         errorMessage={formErrors.message}
       />
-      <Button type='submit' color='yellow'>
+      <Button type='submit' color='violet'>
         Send
       </Button>
     </form>
-  );
-};
+  )
+}

@@ -1,6 +1,6 @@
-import { Logo } from '../shared/logo/Logo';
-import { Navbar } from '../navbar/Navbar';
-import { SocialList } from './SocialList';
+import { Logo } from '../Logo/Logo'
+import { Navbar } from '../Navbar/Navbar'
+import { SocialList } from '../SocialList/SocialList'
 
 const Header = ({ menuList, socialLinks }) => {
   return (
@@ -9,7 +9,7 @@ const Header = ({ menuList, socialLinks }) => {
       <Navbar menuList={menuList} />
       <SocialList socialLinks={socialLinks} />
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

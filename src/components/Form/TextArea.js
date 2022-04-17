@@ -1,4 +1,4 @@
-import { ErrorText } from './FormErrorText';
+import { ErrorText } from './FormErrorText'
 
 export const TextArea = ({ errorMessage, ...rest }) => {
   return (
@@ -6,11 +6,11 @@ export const TextArea = ({ errorMessage, ...rest }) => {
       <label className='block'>
         <span className='sr-only'>{rest.name}</span>
         <textarea
-          className='p-3 rounded-3xl lg:p-4 text-base sm:text-lg md:text-xl block w-full'
+          className='p-3 rounded-3xl lg:p-4 text-base sm:text-lg md:text-xl block w-full text-slate-700'
           {...rest}
         />
       </label>
       <ErrorText>{errorMessage}</ErrorText>
     </div>
-  );
-};
+  )
+}

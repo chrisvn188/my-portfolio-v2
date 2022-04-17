@@ -1,4 +1,4 @@
-import { styles } from '../../../styles/styles';
+import { styles } from '../../styles/styles'
 
 export const Button = ({
   children,
@@ -10,5 +10,5 @@ export const Button = ({
     <button className={styles.button(color)} onClick={onClick} type={type}>
       {children}
     </button>
-  );
-};
+  )
+}

@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaGithub, FaLink } from 'react-icons/fa'
 
 const ProjectCard = ({ project }) => {
