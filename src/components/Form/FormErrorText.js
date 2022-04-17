@@ -1,3 +1,3 @@
 export const ErrorText = ({ children }) => {
-  return <p className='text-brand-red text-sm pl-6 mt-1'>{children}</p>;
-};
+  return <p className='text-brand-red text-sm mt-1 max-w-none'>{children}</p>
+}

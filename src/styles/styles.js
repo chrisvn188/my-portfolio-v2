@@ -25,23 +25,23 @@ export const styles = {
     return `text-xs sm:text-lg md:text-xl text-slate-100 px-5 py-2 lg:px-6 lg:py-3 rounded-full hover:-translate-y-2 transition-all active:-translate-y-1 inline-block ${backgroundColor}`
   },
 
-  button(color) {
+  button(bgColor) {
     const DEFAULT = COLORS[0]
     let backgroundColor
 
-    if (!COLORS.includes(color)) {
+    if (!COLORS.includes(bgColor)) {
       backgroundColor = DEFAULT
     }
-    if (color === 'violet') {
+    if (bgColor === 'violet') {
       backgroundColor = 'bg-brand-violet'
     }
-    if (color === 'red') {
+    if (bgColor === 'red') {
       backgroundColor = 'bg-brand-red'
     }
-    if (color === 'yellow') {
+    if (bgColor === 'yellow') {
       backgroundColor = 'bg-brand-yellow'
     }
 
-    return `text-base sm:text-lg md:text-xl text-brand-violet bg-brand-yellow px-6 py-3 rounded-full hover:-translate-y-2 transition-all ${backgroundColor}`
+    return `text-base sm:text-lg md:text-xl px-6 py-3 rounded-full hover:-translate-y-2 transition-all ${backgroundColor} text-slate-100`
   },
 }
