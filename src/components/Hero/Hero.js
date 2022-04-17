@@ -2,6 +2,8 @@ import { useRef, useEffect } from 'react'
 import { styles } from '../../styles/styles'
 import { Link } from '../Link/Link'
 import HeroImage from '../../assets/images/using-computer.svg'
+import resumePdf from '../../assets/pdf/resume.pdf'
+import { AiOutlineDownload } from 'react-icons/ai'
 
 const Hero = () => {
   const imgRef = useRef(null)
@@ -45,8 +47,9 @@ const Hero = () => {
           />
         </div>
         <div className='flex gap-4 justify-center mt-10 items-center lg:mt-0 lg:col-start-2 justify-self-start'>
-          <Link color='violet' href='#contact'>
-            Let's talk
+          <Link color='violet' href={resumePdf} download>
+            <AiOutlineDownload />
+            <span>Resume</span>
           </Link>
           <Link color='red' href='#projects'>
             My projects
