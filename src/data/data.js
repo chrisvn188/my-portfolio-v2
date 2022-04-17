@@ -96,7 +96,7 @@ export const projectList = [
     title: 'Countries App',
     imgSrc: CountriesImg,
     description:
-      'Countries app is a great project challenged by Front End Mentor. Working on this project helped me strenthen my skills to handle with api.',
+      'Countries app is a great project challenged by Front End Mentor. Working on this project helped me strengthen my skills to handle with api.',
     github: 'https://github.com/chrisvn188/country-api-project',
     live: 'https://fa-country-api.netlify.app/',
   },
