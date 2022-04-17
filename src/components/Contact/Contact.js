@@ -55,6 +55,7 @@ const Contact = () => {
           <p>
             Email me:{' '}
             <a
+              className='underline'
               href='mailto:chrisbui.dev@gmail.com'
               target='_blank'
               rel='noreferrer'>
