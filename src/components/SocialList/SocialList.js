@@ -1,3 +1,6 @@
+import { useContext } from 'react'
+import { SocialLinksContext } from '../../App'
+
 const SocialItem = ({ item }) => {
   return (
     <li>
@@ -12,7 +15,8 @@ const SocialItem = ({ item }) => {
   )
 }
 
-export const SocialList = ({ socialLinks }) => {
+export const SocialList = () => {
+  const socialLinks = useContext(SocialLinksContext)
   return (
     <ul className='justify-center gap-4 hidden lg:flex'>
       {socialLinks.map(item => (

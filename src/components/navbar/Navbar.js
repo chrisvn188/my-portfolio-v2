@@ -1,9 +1,9 @@
-import { MenuList } from './MenuList';
+import { MenuList } from './MenuList'
 
-export const Navbar = ({ menuList }) => {
+export const Navbar = () => {
   return (
     <nav className='hidden lg:block'>
-      <MenuList menuList={menuList} />
+      <MenuList />
     </nav>
-  );
-};
+  )
+}

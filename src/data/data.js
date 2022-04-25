@@ -10,6 +10,8 @@ import PorfolioImg from '../assets/images/project-portfolio.png'
 import MemoryEggsImg from '../assets/images/memory-eggs.png'
 import CountriesImg from '../assets/images/countries-api.png'
 import MusicImg from '../assets/images/music-player.png'
+import LoopStudio from '../assets/images/loop-studio.png'
+import TipCalculator from '../assets/images/tip-calculator.png'
 
 export const menuList = [
   {
@@ -85,14 +87,6 @@ export const projectList = [
     live: 'https://chrisbui-personal.netlify.app/',
   },
   {
-    title: 'Uncle Minigames',
-    imgSrc: MemoryEggsImg,
-    description:
-      "Uncle Minigames is another React project that I build for my nephews. It is a collection of minigames that are good for brain, help them to remember things better. I'm so happy that they liked it and had lots of fun playing it.",
-    github: 'https://github.com/chrisvn188/memory-eggs',
-    live: 'https://memory-eggs-mini-game.netlify.app/',
-  },
-  {
     title: 'Countries App',
     imgSrc: CountriesImg,
     description:
@@ -101,11 +95,35 @@ export const projectList = [
     live: 'https://fa-country-api.netlify.app/',
   },
   {
+    title: 'Memory eggs',
+    imgSrc: MemoryEggsImg,
+    description:
+      "Memory eggs is another React project that I build for my nephews. It is a minigame that is good for brain, help them to remember things better. I'm so happy that they liked it and had lots of fun playing it.",
+    github: 'https://github.com/chrisvn188/memory-eggs',
+    live: 'https://memory-eggs-mini-game.netlify.app/',
+  },
+  {
+    title: 'Tip calculator app',
+    imgSrc: TipCalculator,
+    description:
+      "Tip calculator app is a good looking app from one of the Frontend Mentor challenges. It's a project that helps me learn how to validate form fields.",
+    github: 'https://github.com/chrisvn188/tip-calculator-app',
+    live: 'https://chrisvn188.github.io/tip-calculator-app/',
+  },
+  {
     title: 'Music Player',
     imgSrc: MusicImg,
     description:
       'As I love listening to music in my free time, I decided to make a simple music app that includes a list of my favourite Vietnamese songs. It was a fun project to practice my Javascript skill.',
     github: 'https://github.com/chrisvn188/music-player',
     live: 'https://chrisvn188.github.io/music-player/',
+  },
+  {
+    title: 'Loop Studio Landing Page',
+    imgSrc: LoopStudio,
+    description:
+      'Loop studio landing page is a project to test my responsive design skills.During time doing it, I realized that developing a website using mobile first approach is much more easier to scale up. ',
+    github: 'https://github.com/chrisvn188/loopstudios-landing-page',
+    live: 'https://chrisvn188.github.io/loopstudios-landing-page/',
   },
 ]

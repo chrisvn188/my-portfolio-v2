@@ -1,3 +1,6 @@
+import { useContext } from 'react'
+import { MenuListContext } from '../../App'
+
 const MenuItem = ({ item }) => {
   return (
     <li>
@@ -11,7 +14,8 @@ const MenuItem = ({ item }) => {
   )
 }
 
-export const MenuList = ({ menuList }) => {
+export const MenuList = () => {
+  const menuList = useContext(MenuListContext)
   return (
     <ul className='space-y-6'>
       {menuList.map(item => (
